@@ -1,6 +1,7 @@
 package com.joe.rh_system.Controller;
 
 import com.joe.rh_system.DTO.EmployeeDTO;
+import com.joe.rh_system.DTO.RegisterEmployeeDTO;
 import com.joe.rh_system.Service.EmployeeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,7 +28,7 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public ResponseEntity<EmployeeDTO> save(@RequestBody EmployeeDTO dto){
+    public ResponseEntity<EmployeeDTO> save(@RequestBody RegisterEmployeeDTO dto){
         return ResponseEntity.ok(service.save(dto));
     }
 
