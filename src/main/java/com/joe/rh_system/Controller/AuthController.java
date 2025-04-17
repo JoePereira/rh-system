@@ -1,16 +1,13 @@
 package com.joe.rh_system.Controller;
 
 import com.joe.rh_system.DTO.LoginDTO;
-import com.joe.rh_system.Model.Employee;
 import com.joe.rh_system.Repository.EmployeeRepository;
-import com.joe.rh_system.Security.JwtUtil;
 import com.joe.rh_system.Security.jwt.JwtService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
